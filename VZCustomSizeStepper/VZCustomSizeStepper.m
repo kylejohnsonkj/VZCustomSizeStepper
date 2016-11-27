@@ -52,7 +52,6 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetFillColorWithColor(context, [color CGColor]);
     CGContextFillRect(context, rect);
-//    [self drawRect:rect cornerRadius:self.layer.cornerRadius color:color];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     image = [self imageWithRoundedCornersSize:self.layer.cornerRadius usingImage:image];
